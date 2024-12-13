@@ -6,6 +6,7 @@ import Route from "../components/Route.astro"
 import Checklist from "../components/Checklist.jsx";
 import Playlists from '../components/Playlists.astro';
 import Car from "../components/Car.astro";
+import Livecam from "../components/Livecam.astro";
 ---
 <Layout>
 <div id="hero" style="height: 100vh; background-color: lightgray;">
@@ -25,5 +26,8 @@ import Car from "../components/Car.astro";
   </div>
   <div id="playlists" style="padding: 4rem 0; background-color: rgb(243 244 246)">
     <Playlists  />
+  </div>
+  <div id="live" style="padding: 4rem 0; background-color: rgb(243 244 246)">
+    <Livecam  />
   </div>
 </Layout>

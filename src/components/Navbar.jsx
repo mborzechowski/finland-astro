@@ -62,6 +62,12 @@ export default function Navbar() {
             >
               Playlist
             </a>
+            <a
+              href='#live'
+              className='text-red-600 border-b-2 border-white hover:text-finland-blue hover:border-b-2 hover:border-blue-800'
+            >
+              Live
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -134,6 +140,12 @@ export default function Navbar() {
               className='block text-gray-600 hover:text-finland-blue hover:bg-gray-100 px-4 py-2 rounded-md'
             >
               Playlist
+            </a>
+            <a
+              href='#live'
+              className='block text-red-600 hover:text-finland-blue hover:bg-gray-100 px-4 py-2 rounded-md'
+            >
+              Live
             </a>
           </div>
         )}
