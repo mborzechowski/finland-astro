@@ -1,6 +1,6 @@
 ---
-import Navbar from '../components/Navbar.astro';
-import '../styles/global.css'
+import Navbar from '../components/Navbar';
+import '../../styles/global.css'
 ---
 <html lang="en">
   <body>
@@ -11,7 +11,7 @@ import '../styles/global.css'
 		<meta name="generator" content={Astro.generator} />
 		<title>Finland2025</title>
 	</head>
-    <Navbar />
+    <Navbar client:load />
     <main>
       <slot />
     </main>

@@ -1,0 +1,35 @@
+---
+const playlists = [
+  {
+    id: '2HV2bECF2oTBUnbXaQLaH1', 
+    title: 'Playlist 1',
+  },
+  {
+    id: '7uRClEwiuf4xSHIbZy9f1B', 
+    title: 'Playlist 2',
+  },
+];
+---
+
+<div class="p-4 max-w-screen-lg mx-auto">
+  <h1 class="text-2xl font-bold mb-6 text-center">Playlists</h1>
+  <div class="flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0">
+    {playlists.map((playlist) => (
+      <div class="flex-1">
+        <iframe
+          src={`https://open.spotify.com/embed/playlist/${playlist.id}`}
+          width="100%"
+          height="480"
+          frameborder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          class="rounded-lg shadow-md"
+          allowfullscreen
+        ></iframe>
+      </div>
+    ))}
+  </div>
+  <p class="mt-10 text-center text-lg text-blue-600">
+    Open the playlist on Spotify to add new songs.
+  </p>
+</div>
+

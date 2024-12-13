@@ -3,15 +3,27 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro"
 import Cabin from "../components/Cabin.astro"
 import Route from "../components/Route.astro"
+import Checklist from "../components/Checklist.jsx";
+import Playlists from '../components/Playlists.astro';
+import Car from "../components/Car.astro";
 ---
 <Layout>
 <div id="hero" style="height: 100vh; background-color: lightgray;">
     <Hero />
   </div>
-  <div id="cabin" style="height: 100vh; background-color: lightblue;">
+  <div id="cabin" style="padding: 4rem 0; background-color: rgb(243 244 246);">
     <Cabin />
   </div>
-  <div id="route" style="height: 100vh; background-color: lightblue;">
+  <div id="route" style="padding: 4rem 0; background-color: lightblue;">
     <Route />
+  </div>
+  <div id="car" style="padding: 4rem 0; background-color: rgb(243 244 246)">
+    <Car />
+  </div>
+  <div id="checklist" style="padding: 4rem 0; background-color: lightblue;">
+    <Checklist client:load  />
+  </div>
+  <div id="playlists" style="padding: 4rem 0; background-color: rgb(243 244 246)">
+    <Playlists  />
   </div>
 </Layout>
